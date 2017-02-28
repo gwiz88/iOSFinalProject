@@ -8,13 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		57C6FAE91E662BB10097C0BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C6FAE81E662BB10097C0BA /* AppDelegate.swift */; };
-		57C6FAEB1E662BB10097C0BA /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C6FAEA1E662BB10097C0BA /* FirstViewController.swift */; };
-		57C6FAED1E662BB10097C0BA /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C6FAEC1E662BB10097C0BA /* SecondViewController.swift */; };
+		57C6FAEB1E662BB10097C0BA /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C6FAEA1E662BB10097C0BA /* MainViewController.swift */; };
+		57C6FAED1E662BB10097C0BA /* ExerciseIntakeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C6FAEC1E662BB10097C0BA /* ExerciseIntakeViewController.swift */; };
 		57C6FAF01E662BB10097C0BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57C6FAEE1E662BB10097C0BA /* Main.storyboard */; };
 		57C6FAF21E662BB10097C0BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57C6FAF11E662BB10097C0BA /* Assets.xcassets */; };
 		57C6FAF51E662BB10097C0BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57C6FAF31E662BB10097C0BA /* LaunchScreen.storyboard */; };
 		57C6FB001E662BB20097C0BA /* iOSFinalProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C6FAFF1E662BB20097C0BA /* iOSFinalProjectTests.swift */; };
 		57C6FB0B1E662BB20097C0BA /* iOSFinalProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C6FB0A1E662BB20097C0BA /* iOSFinalProjectUITests.swift */; };
+		57C6FB191E662DB70097C0BA /* PerosnalInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C6FB181E662DB70097C0BA /* PerosnalInfoViewController.swift */; };
+		57C6FB1B1E662E0C0097C0BA /* TrackingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C6FB1A1E662E0C0097C0BA /* TrackingViewController.swift */; };
+		57C6FB1D1E662E1E0097C0BA /* CalorieIntakeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C6FB1C1E662E1E0097C0BA /* CalorieIntakeViewController.swift */; };
+		57C6FB1F1E662E2B0097C0BA /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C6FB1E1E662E2B0097C0BA /* ScannerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +41,8 @@
 /* Begin PBXFileReference section */
 		57C6FAE51E662BB10097C0BA /* iOSFinalProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSFinalProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57C6FAE81E662BB10097C0BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		57C6FAEA1E662BB10097C0BA /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		57C6FAEC1E662BB10097C0BA /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		57C6FAEA1E662BB10097C0BA /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		57C6FAEC1E662BB10097C0BA /* ExerciseIntakeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseIntakeViewController.swift; sourceTree = "<group>"; };
 		57C6FAEF1E662BB10097C0BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		57C6FAF11E662BB10097C0BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		57C6FAF41E662BB10097C0BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +53,10 @@
 		57C6FB061E662BB20097C0BA /* iOSFinalProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSFinalProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		57C6FB0A1E662BB20097C0BA /* iOSFinalProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSFinalProjectUITests.swift; sourceTree = "<group>"; };
 		57C6FB0C1E662BB20097C0BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57C6FB181E662DB70097C0BA /* PerosnalInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerosnalInfoViewController.swift; sourceTree = "<group>"; };
+		57C6FB1A1E662E0C0097C0BA /* TrackingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackingViewController.swift; sourceTree = "<group>"; };
+		57C6FB1C1E662E1E0097C0BA /* CalorieIntakeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalorieIntakeViewController.swift; sourceTree = "<group>"; };
+		57C6FB1E1E662E2B0097C0BA /* ScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,9 +108,13 @@
 			isa = PBXGroup;
 			children = (
 				57C6FAE81E662BB10097C0BA /* AppDelegate.swift */,
-				57C6FAEA1E662BB10097C0BA /* FirstViewController.swift */,
-				57C6FAEC1E662BB10097C0BA /* SecondViewController.swift */,
+				57C6FAEA1E662BB10097C0BA /* MainViewController.swift */,
+				57C6FAEC1E662BB10097C0BA /* ExerciseIntakeViewController.swift */,
 				57C6FAEE1E662BB10097C0BA /* Main.storyboard */,
+				57C6FB181E662DB70097C0BA /* PerosnalInfoViewController.swift */,
+				57C6FB1A1E662E0C0097C0BA /* TrackingViewController.swift */,
+				57C6FB1C1E662E1E0097C0BA /* CalorieIntakeViewController.swift */,
+				57C6FB1E1E662E2B0097C0BA /* ScannerViewController.swift */,
 				57C6FAF11E662BB10097C0BA /* Assets.xcassets */,
 				57C6FAF31E662BB10097C0BA /* LaunchScreen.storyboard */,
 				57C6FAF61E662BB10097C0BA /* Info.plist */,
@@ -262,9 +274,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57C6FAED1E662BB10097C0BA /* SecondViewController.swift in Sources */,
+				57C6FB1F1E662E2B0097C0BA /* ScannerViewController.swift in Sources */,
+				57C6FB1D1E662E1E0097C0BA /* CalorieIntakeViewController.swift in Sources */,
+				57C6FB1B1E662E0C0097C0BA /* TrackingViewController.swift in Sources */,
+				57C6FB191E662DB70097C0BA /* PerosnalInfoViewController.swift in Sources */,
+				57C6FAED1E662BB10097C0BA /* ExerciseIntakeViewController.swift in Sources */,
 				57C6FAE91E662BB10097C0BA /* AppDelegate.swift in Sources */,
-				57C6FAEB1E662BB10097C0BA /* FirstViewController.swift in Sources */,
+				57C6FAEB1E662BB10097C0BA /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
