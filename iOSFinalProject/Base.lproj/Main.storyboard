@@ -325,7 +325,6 @@
                                 <rect key="frame" x="67" y="445" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -379,6 +378,7 @@
                     <connections>
                         <outlet property="exerciseOutput" destination="FfG-sD-yrr" id="u5T-d9-ZAS"/>
                         <outlet property="finalExercise" destination="RA8-6s-gn5" id="JOC-RO-xaf"/>
+                        <outlet property="picker" destination="2KY-4v-mCR" id="RcC-Xo-XBO"/>
                         <outlet property="weightHolder" destination="70g-Gl-OO3" id="Qrx-Cu-9dF"/>
                     </connections>
                 </viewController>
