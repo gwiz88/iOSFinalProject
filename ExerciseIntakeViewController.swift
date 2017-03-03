@@ -56,12 +56,6 @@ class ExerciseIntakeViewController: UIViewController,UIPickerViewDataSource, UIP
         var base200 = 0
         var base160 = 0
         
-        
-        
-        
-        
-        
-        
         if exerciseType[picker.selectedRow(inComponent: 0)] == "Jogging"{
              base240 = 905
              base200 = 755
@@ -70,7 +64,7 @@ class ExerciseIntakeViewController: UIViewController,UIPickerViewDataSource, UIP
             exerciseArray.append(exerciseType[picker.selectedRow(inComponent: 0)])
             
             
-            if timeLength[picker.selectedRow(inComponent: 0)] == "15 min" {
+            if timeLength[picker.selectedRow(inComponent: 1)] == "15 min" {
                 
                 if grabbedWeight >= 240.0{
                     exerciseCount.append(base240/4)
@@ -91,13 +85,12 @@ class ExerciseIntakeViewController: UIViewController,UIPickerViewDataSource, UIP
                     exerciseCalorie += (base160/4)
                     finalExercise.text = String(exerciseCalorie)
 
-                    
                 }
                 
                 
              
             }
-            else if timeLength[picker.selectedRow(inComponent: 0)] == "30 min" {
+            else if timeLength[picker.selectedRow(inComponent: 1)] == "30 min" {
                 
                 if grabbedWeight >= 240.0{
                     exerciseCount.append(base240/2)
@@ -122,13 +115,12 @@ class ExerciseIntakeViewController: UIViewController,UIPickerViewDataSource, UIP
                 
                 
             }
-            else if timeLength[picker.selectedRow(inComponent: 0)] == "60 min" {
+            else if timeLength[picker.selectedRow(inComponent: 1)] == "60 min" {
                 
                 if grabbedWeight >= 240.0{
                     exerciseCount.append(base240)
                     exerciseCalorie += base240
-                    
-                   
+            
                 }
                 
                 else if grabbedWeight < 240.0 && grabbedWeight > 200.0  {
@@ -158,17 +150,17 @@ class ExerciseIntakeViewController: UIViewController,UIPickerViewDataSource, UIP
             
             exerciseType[picker.selectedRow(inComponent: 0)]
             
-            if timeLength[picker.selectedRow(inComponent: 0)] == "15 min" {
+            if timeLength[picker.selectedRow(inComponent: 1)] == "15 min" {
                 
                 
             }
             
-            else if timeLength[picker.selectedRow(inComponent: 0)] == "30 min" {
+            else if timeLength[picker.selectedRow(inComponent: 1)] == "30 min" {
                 
                 
             }
             
-            else if timeLength[picker.selectedRow(inComponent: 0)] == "60 min" {
+            else if timeLength[picker.selectedRow(inComponent: 1)] == "60 min" {
                 
                 
             }
@@ -183,7 +175,7 @@ class ExerciseIntakeViewController: UIViewController,UIPickerViewDataSource, UIP
             
             exerciseType[picker.selectedRow(inComponent: 0)]
             
-            if timeLength[picker.selectedRow(inComponent: 0)] == "15 min" {
+            if timeLength[picker.selectedRow(inComponent: 1)] == "15 min" {
                 
                 
             }
@@ -199,21 +191,20 @@ class ExerciseIntakeViewController: UIViewController,UIPickerViewDataSource, UIP
             
         }
         
-        for index in 0..<(exerciseCount.count-1) {
+        for index in 0..<(exerciseCount.count) {
             exerciseOutput.text = exerciseHolder! + "\n" + String(exerciseArray[index]) + "   " + String(exerciseCount[index])
             
         }
-        
+        finalExercise.text = String(exerciseCalorie)
        // exerciseOutput.text = exerciseType[picker.selectedRow(inComponent: 0)] + timeLength[picker.selectedRow(inComponent: 1)]
     }// add finish
     
     
     @IBAction func Clear(_ sender: UIButton) {
         
-        
-        
-        
-        
+        exerciseOutput.text = ""
+        exerciseCalorie = 0
+        finalExercise.text = ""
     }
     
     
