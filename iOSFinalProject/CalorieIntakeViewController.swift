@@ -10,9 +10,69 @@ import UIKit
 
 class CalorieIntakeViewController: UIViewController {
 
+    var foodArray: [String] = []
+    var calorieArray: [Int] = []
+    
+    var finalCalories: Int = 0
+    
+    @IBOutlet weak var foodText: UITextField!
+    @IBOutlet weak var calorieText: UITextField!
+    
+    @IBOutlet weak var finalOutput: UITextView!
+    
+    @IBOutlet weak var finalCalorie: UILabel!
+    
+    
+    @IBAction func Add(_ sender: UIButton) {
+        var textHolder = finalOutput.text
+        
+        //place holder arrays
+        foodArray.append(foodText.text!)
+        calorieArray.append(Int(calorieText.text!)!)
+        
+        finalCalories += Int(calorieText.text!)!
+        finalCalorie.text = String(finalCalories)
+        
+        finalOutput.text = textHolder! + "\n" + foodText.text! + "    " + calorieText.text! + "\n"
+        
+        
+        foodText.text = ""
+        calorieText.text = ""
+        
+        
+        
+    }
+    
+    
+    @IBAction func Clear(_ sender: UIButton) {
+        
+        
+        foodText.text = ""
+        calorieText.text = ""
+        finalOutput.text = ""
+        
+        finalCalories = 0
+        finalCalorie.text = String(finalCalories)
+        finalOutput.text = ""
+        
+        foodArray = []
+        calorieArray = []
+        
+    }
+    
+    
+    
+    
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+       
+        
+        self.view.addGestureRecognizer(UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:))))
+        // Do any additional setup after loading the view.
         // Do any additional setup after loading the view.
     }
 
