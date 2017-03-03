@@ -12,22 +12,60 @@ import UIKit
 let exerciseType = [
     "Jogging",
     "Swimming",
-    "yoga"
+    "Yoga"
 ]
 
 let timeLength = [
     "15 min",
     "30 min",
-    "45 min"
+    "60 min"
 ]
 
 
 class ExerciseIntakeViewController: UIViewController,UIPickerViewDataSource, UIPickerViewDelegate {
 
+    var grabbedWeight: [Double] = [0.0]
     
+    var exerciseCalorie = 0
+    
+    var exerciseArray: [String] = []
+    var exerciseCount: [Int] = []
+    
+    @IBOutlet weak var weightHolder: UITextField!
+
+    
+    @IBOutlet weak var exerciseOutput: UITextView!
     
     
     @IBOutlet weak var picker: UIPickerView!
+    
+    
+    @IBOutlet weak var finalExercise: UILabel!
+    
+    @IBAction func grabWeight(_ sender: UIButton) {
+        grabbedWeight = [Double(weightHolder.text!)!]
+        
+        //Put fetch function here fropm the actual Persona Info for weight
+        
+        
+    }
+    
+    @IBAction func Add(_ sender: UIButton) {
+        
+        
+    }
+    
+    
+    @IBAction func Clear(_ sender: UIButton) {
+        
+        
+        
+        
+        
+    }
+    
+    
+    
     
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
