@@ -16,8 +16,14 @@ class ActualCameraViewController: UIViewController, AVCaptureMetadataOutputObjec
     @IBOutlet weak var messageLabel: UILabel!
     
     
+    @IBAction func BackToPrevious(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
+        
+    }
+/*
     @IBAction func BackToCalorieIntake(_ sender: UIBarButtonItem) {dismiss(animated: true, completion: nil)
     }
+ */
     
     var captureSession:AVCaptureSession?
     var videoPreviewLayer:AVCaptureVideoPreviewLayer?
