@@ -19,6 +19,7 @@
 		57C6FB1D1E662E1E0097C0BA /* CalorieIntakeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C6FB1C1E662E1E0097C0BA /* CalorieIntakeViewController.swift */; };
 		57C6FB1F1E662E2B0097C0BA /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C6FB1E1E662E2B0097C0BA /* ScannerViewController.swift */; };
 		57C6FB211E6633C90097C0BA /* ExerciseIntakeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C6FB201E6633C90097C0BA /* ExerciseIntakeViewController.swift */; };
+		A13278621E69E6B20020C290 /* ActualCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13278611E69E6B20020C290 /* ActualCameraViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		57C6FB1C1E662E1E0097C0BA /* CalorieIntakeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalorieIntakeViewController.swift; sourceTree = "<group>"; };
 		57C6FB1E1E662E2B0097C0BA /* ScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
 		57C6FB201E6633C90097C0BA /* ExerciseIntakeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExerciseIntakeViewController.swift; path = ../ExerciseIntakeViewController.swift; sourceTree = "<group>"; };
+		A13278611E69E6B20020C290 /* ActualCameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActualCameraViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 		57C6FADC1E662BB10097C0BA = {
 			isa = PBXGroup;
 			children = (
+				A13278611E69E6B20020C290 /* ActualCameraViewController.swift */,
 				57C6FAE71E662BB10097C0BA /* iOSFinalProject */,
 				57C6FAFE1E662BB20097C0BA /* iOSFinalProjectTests */,
 				57C6FB091E662BB20097C0BA /* iOSFinalProjectUITests */,
@@ -208,6 +211,7 @@
 				TargetAttributes = {
 					57C6FAE41E662BB10097C0BA = {
 						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 8Q9Y8CHMFG;
 						ProvisioningStyle = Automatic;
 					};
 					57C6FAFA1E662BB20097C0BA = {
@@ -276,6 +280,7 @@
 			files = (
 				57C6FB211E6633C90097C0BA /* ExerciseIntakeViewController.swift in Sources */,
 				57C6FB1F1E662E2B0097C0BA /* ScannerViewController.swift in Sources */,
+				A13278621E69E6B20020C290 /* ActualCameraViewController.swift in Sources */,
 				57C6FB1D1E662E1E0097C0BA /* CalorieIntakeViewController.swift in Sources */,
 				57C6FB1B1E662E0C0097C0BA /* TrackingViewController.swift in Sources */,
 				57C6FB191E662DB70097C0BA /* PerosnalInfoViewController.swift in Sources */,
@@ -430,6 +435,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8Q9Y8CHMFG;
 				INFOPLIST_FILE = iOSFinalProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Depaul-University.iOSFinalProject";
@@ -442,6 +448,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8Q9Y8CHMFG;
 				INFOPLIST_FILE = iOSFinalProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Depaul-University.iOSFinalProject";
@@ -523,6 +530,7 @@
 				57C6FB111E662BB20097C0BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		57C6FB121E662BB20097C0BA /* Build configuration list for PBXNativeTarget "iOSFinalProjectTests" */ = {
 			isa = XCConfigurationList;
@@ -531,6 +539,7 @@
 				57C6FB141E662BB20097C0BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		57C6FB151E662BB20097C0BA /* Build configuration list for PBXNativeTarget "iOSFinalProjectUITests" */ = {
 			isa = XCConfigurationList;
@@ -539,6 +548,7 @@
 				57C6FB171E662BB20097C0BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
