@@ -43,8 +43,12 @@ class ExerciseIntakeViewController: UIViewController,UIPickerViewDataSource, UIP
     @IBOutlet weak var finalExercise: UILabel!
     
     @IBAction func grabWeight(_ sender: UIButton) {
-        grabbedWeight = Double(weightHolder.text!)!
+        //grabbedWeight = Double(weightHolder.text!)!
         
+        let weight_vc:PerosnalInfoViewController = self.tabBarController?.viewControllers![2] as! PerosnalInfoViewController
+        
+        grabbedWeight = Double(Int(weight_vc.passWeight))
+        weightHolder.text = String(grabbedWeight)
         //Put fetch function here fropm the actual Persona Info for weight
         
         
@@ -56,11 +60,14 @@ class ExerciseIntakeViewController: UIViewController,UIPickerViewDataSource, UIP
         var base200 = 0
         var base160 = 0
         
+        
+        //from here
+        
         if exerciseType[picker.selectedRow(inComponent: 0)] == "Jogging"{
              base240 = 905
              base200 = 755
              base160 = 606
-            
+   
             exerciseArray.append(exerciseType[picker.selectedRow(inComponent: 0)])
             
             

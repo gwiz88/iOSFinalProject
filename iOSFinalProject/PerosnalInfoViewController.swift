@@ -12,6 +12,7 @@ class PerosnalInfoViewController: UIViewController {
 
 var BMRFinal = 0.0
     
+var passWeight = 0
     
 @IBOutlet weak var genderSelect: UISegmentedControl!
     
@@ -31,7 +32,8 @@ var BMRFinal = 0.0
         let heightDouble: Double? = Double(inches.text!)
         let weightDouble: Double? = Double(pounds.text!)
         
-        
+        passWeight = Int(weightDouble!)
+    
         if genderSelect.selectedSegmentIndex == 0 {
             let BMR1 = 66.5 + (6.2 * weightDouble!)
             let BMR2 = (12.7 * heightDouble!)
@@ -68,6 +70,10 @@ var BMRFinal = 0.0
             
             if let destination = segue.destination as? FirstViewController {
                 destination.gotPersonal = Int(BMRFinal)
+            }
+            
+            if let destination = segue.destination as? ExerciseIntakeViewController {
+                destination.grabbedWeight = Double(passWeight)
             }
         }
     }
