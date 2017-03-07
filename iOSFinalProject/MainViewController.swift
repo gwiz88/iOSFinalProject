@@ -9,6 +9,57 @@
 import UIKit
 
 class FirstViewController: UIViewController {
+    
+    var gotPersonal: Int = 0
+    
+    var gotFood: Int = 0
+    
+    var gotExercise: Int = 0
+    
+    var finalCalorie: Int = 0
+    
+    @IBOutlet weak var perCal: UILabel!
+    
+    @IBOutlet weak var foodCal: UILabel!
+    
+    @IBOutlet weak var finalCal: UILabel!
+    
+    @IBOutlet weak var exerciseCal: UILabel!
+    
+    
+    @IBAction func fetch(_ sender: UIButton) {
+        let personal_vc:PerosnalInfoViewController = self.tabBarController?.viewControllers![2] as! PerosnalInfoViewController
+        
+        gotPersonal = Int(personal_vc.BMRFinal)
+        perCal.text = String(gotPersonal)
+        
+        
+        
+    }
+    
+    @IBAction func compute(_ sender: UIButton) {
+        
+        
+        
+        
+        
+        
+    }
+    
+    
+    
+    @IBAction func clear(_ sender: UIButton) {
+        
+        gotPersonal = 0
+        perCal.text = "0"
+        gotFood = 0
+        foodCal.text = "0"
+        gotExercise = 0
+        exerciseCal.text = "0"
+        finalCalorie = 0
+        finalCal.text = "0"
+    }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
