@@ -38,11 +38,17 @@ class FirstViewController: UIViewController {
         gotFood = food_vc.finalCalories
         foodCal.text = String(gotFood)
         
+        let exercise_vc:ExerciseIntakeViewController = self.tabBarController?.viewControllers![4] as! ExerciseIntakeViewController
+        
+        gotExercise = exercise_vc.exerciseCalorie
+        exerciseCal.text = String(gotExercise)
+        
     }
     
     @IBAction func compute(_ sender: UIButton) {
         
-        
+        finalCalorie = gotPersonal - gotFood + gotExercise
+        finalCal.text = String(finalCalorie)
         
         
         

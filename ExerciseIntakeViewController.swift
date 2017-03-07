@@ -365,6 +365,18 @@ class ExerciseIntakeViewController: UIViewController,UIPickerViewDataSource, UIP
     
     
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+        if segue.identifier == "Save"{
+            
+            if let destination = segue.destination as? FirstViewController {
+                destination.gotPersonal = Int(exerciseCalorie)
+            }
+        }
+    }
+
+    
     
     
     
