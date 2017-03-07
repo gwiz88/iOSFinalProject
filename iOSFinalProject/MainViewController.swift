@@ -33,7 +33,10 @@ class FirstViewController: UIViewController {
         gotPersonal = Int(personal_vc.BMRFinal)
         perCal.text = String(gotPersonal)
         
+        let food_vc:CalorieIntakeViewController = self.tabBarController?.viewControllers![1] as! CalorieIntakeViewController
         
+        gotFood = food_vc.finalCalories
+        foodCal.text = String(gotFood)
         
     }
     
