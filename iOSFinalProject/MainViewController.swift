@@ -26,6 +26,12 @@ class FirstViewController: UIViewController {
     
     @IBOutlet weak var exerciseCal: UILabel!
     
+    @IBOutlet weak var fetchButton: UIButton!
+    
+    @IBOutlet weak var computeButton: UIButton!
+    
+    @IBOutlet weak var clearButton: UIButton!
+    
     
     @IBAction func fetch(_ sender: UIButton) {
         let personal_vc:PerosnalInfoViewController = self.tabBarController?.viewControllers![2] as! PerosnalInfoViewController
@@ -72,6 +78,10 @@ class FirstViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        fetchButton.layer.cornerRadius = 4
+        computeButton.layer.cornerRadius = 4
+        clearButton.layer.cornerRadius = 4
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 

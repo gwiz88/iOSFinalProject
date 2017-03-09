@@ -22,9 +22,16 @@ class CalorieIntakeViewController: UIViewController {
     
     @IBOutlet weak var finalCalorie: UILabel!
     
+    @IBOutlet weak var scanButton: UIButton!
+    
+    @IBOutlet weak var addButton: UIButton!
+    
+    @IBOutlet weak var updateButton: UIButton!
+    
+    @IBOutlet weak var clearButton: UIButton!
     
     @IBAction func Add(_ sender: UIButton) {
-        var textHolder = finalOutput.text
+        let textHolder = finalOutput.text
         
         //place holder arrays
         foodArray.append(foodText.text!)
@@ -78,7 +85,10 @@ class CalorieIntakeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+        scanButton.layer.cornerRadius = 4
+        addButton.layer.cornerRadius = 4
+        updateButton.layer.cornerRadius = 4
+        clearButton.layer.cornerRadius = 4
         
         self.view.addGestureRecognizer(UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:))))
         // Do any additional setup after loading the view.
