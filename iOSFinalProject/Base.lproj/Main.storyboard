@@ -116,7 +116,7 @@
                         </subviews>
                         <color key="backgroundColor" red="0.13307297229766846" green="0.13188657164573669" blue="0.19818472862243652" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Main" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Main" image="home" id="acW-dT-cKf"/>
                     <connections>
                         <outlet property="clearButton" destination="gik-zk-jkk" id="86s-MQ-ChP"/>
                         <outlet property="computeButton" destination="wTR-8J-wmj" id="oPz-xM-KNN"/>
@@ -223,7 +223,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Personal Info" id="DMD-F8-DM1"/>
+                    <tabBarItem key="tabBarItem" title="Personal Info" image="person" id="DMD-F8-DM1"/>
                     <connections>
                         <outlet property="genderSelect" destination="Vsb-q0-sAm" id="LCg-Hr-bfT"/>
                         <outlet property="inches" destination="G6r-en-ovJ" id="C4D-Tn-kcT"/>
@@ -350,7 +350,7 @@
                         </subviews>
                         <color key="backgroundColor" red="0.13307297230000001" green="0.1318865716" blue="0.1981847286" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Calorie Intake" id="09N-Oz-ADd"/>
+                    <tabBarItem key="tabBarItem" title="Calorie Intake" image="calories" id="09N-Oz-ADd"/>
                     <connections>
                         <outlet property="addButton" destination="2sh-JE-WDt" id="bH0-Yk-l6t"/>
                         <outlet property="calorieText" destination="jlr-xm-5B8" id="VMc-Mw-bFr"/>
@@ -502,7 +502,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Exercise Intake" image="street View" id="gfs-8D-dMv"/>
+                    <tabBarItem key="tabBarItem" title="Exercise Intake" image="exercise" id="gfs-8D-dMv"/>
                     <connections>
                         <outlet property="exerciseOutput" destination="FfG-sD-yrr" id="u5T-d9-ZAS"/>
                         <outlet property="finalExercise" destination="RA8-6s-gn5" id="JOC-RO-xaf"/>
@@ -527,7 +527,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Tracking" id="vdB-Ow-8or"/>
+                    <tabBarItem key="tabBarItem" title="Tracking" image="tracking" id="vdB-Ow-8or"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xoh-O2-m9D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -541,7 +541,18 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.20772206779999999" green="0.69001644849999999" blue="0.51792955399999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="1" green="0.98282834210000003" blue="0.98294491169999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.20772206779999999" green="0.69001644849999999" blue="0.51792955399999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" red="1" green="0.98282834210000003" blue="0.98294491169999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="keyPath">
+                                <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="unselectedItemTintColor">
+                                <color key="value" red="0.13307297230000001" green="0.1318865716" blue="0.1981847286" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </tabBar>
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
@@ -557,7 +568,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="30" height="30"/>
-        <image name="street View" width="16" height="16"/>
+        <image name="calories" width="29" height="29"/>
+        <image name="exercise" width="29" height="29"/>
+        <image name="home" width="29" height="29"/>
+        <image name="person" width="29" height="29"/>
+        <image name="tracking" width="29" height="29"/>
     </resources>
 </document>
