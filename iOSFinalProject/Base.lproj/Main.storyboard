@@ -329,16 +329,6 @@
                                     <action selector="Add:" destination="ZND-Vt-Ihk" eventType="touchUpInside" id="3wd-9y-fEe"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CnZ-J7-fZY">
-                                <rect key="frame" x="150" y="269" width="63" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.20772206779999999" green="0.69001644849999999" blue="0.51792955399999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="Update">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BjG-8P-sTp">
                                 <rect key="frame" x="252" y="269" width="51" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -390,7 +380,6 @@
                         <outlet property="finalOutput" destination="MV3-8N-7aS" id="oYY-IG-BkU"/>
                         <outlet property="foodText" destination="zrd-Fu-8vf" id="z4m-w1-zrr"/>
                         <outlet property="scanButton" destination="qs6-lS-Sb1" id="22H-er-l4k"/>
-                        <outlet property="updateButton" destination="CnZ-J7-fZY" id="BD9-he-Brc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LP5-JG-8bE" userLabel="First Responder" sceneMemberID="firstResponder"/>

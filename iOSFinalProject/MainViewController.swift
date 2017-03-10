@@ -35,29 +35,39 @@ class FirstViewController: UIViewController {
     
     @IBAction func fetch(_ sender: UIButton) {
         let personal_vc:PerosnalInfoViewController = self.tabBarController?.viewControllers![2] as! PerosnalInfoViewController
-        
-        gotPersonal = Int(personal_vc.BMRFinal)
-        perCal.text = String(gotPersonal)
-        
+        let exercise_vc:ExerciseIntakeViewController = self.tabBarController?.viewControllers![4] as! ExerciseIntakeViewController
         let food_vc:CalorieIntakeViewController = self.tabBarController?.viewControllers![1] as! CalorieIntakeViewController
         
-        gotFood = food_vc.finalCalories
-        foodCal.text = String(gotFood)
-        
-        let exercise_vc:ExerciseIntakeViewController = self.tabBarController?.viewControllers![4] as! ExerciseIntakeViewController
-        
+        gotPersonal = Int(personal_vc.BMRFinal)
         gotExercise = exercise_vc.exerciseCalorie
-        exerciseCal.text = String(gotExercise)
+        gotFood = food_vc.finalCalories
         
+    
+        
+        foodCal.text = String(gotFood)
+        exerciseCal.text = String(gotExercise)
+        perCal.text = String(gotPersonal)
     }
     
     @IBAction func compute(_ sender: UIButton) {
+        
+        if foodCal.text == "0" || perCal.text == "0" {
+        let title = "Warning"
+        let message = "You need to enter the necessary information, please enter your personal info and calorie intake"
+        
+        let alertController = UIAlertController( title: title, message: message, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+        alertController.addAction(okAction)
+        present(alertController, animated: true, completion: nil)
+        
+        } else {
+        
         
         finalCalorie = gotPersonal - gotFood + gotExercise
         finalCal.text = String(finalCalorie)
         
         
-        
+        }
         
     }
     

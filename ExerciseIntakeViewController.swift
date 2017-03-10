@@ -58,15 +58,31 @@ class ExerciseIntakeViewController: UIViewController,UIPickerViewDataSource, UIP
     
     
     @IBAction func grabWeight(_ sender: UIButton) {
+       
+        
+        
         //grabbedWeight = Double(weightHolder.text!)!
         
         let weight_vc:PerosnalInfoViewController = self.tabBarController?.viewControllers![2] as! PerosnalInfoViewController
         
         grabbedWeight = Double(Int(weight_vc.passWeight))
+        
+        
+        if grabbedWeight == 0.0 {
+            let title = "Warning"
+            let message = "You need to enter your information, please enter your personal info"
+            
+            let alertController = UIAlertController( title: title, message: message, preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+            alertController.addAction(okAction)
+            present(alertController, animated: true, completion: nil)
+            
+        } else {
+        
         weightHolder.text = String(grabbedWeight)
         //Put fetch function here fropm the actual Persona Info for weight
         
-        
+        }
     }
     
     @IBAction func Add(_ sender: UIButton) {
@@ -815,11 +831,7 @@ class ExerciseIntakeViewController: UIViewController,UIPickerViewDataSource, UIP
         }
     }
     
-    
-    
-    
-    
-    
+  
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.

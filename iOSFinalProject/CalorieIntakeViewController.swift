@@ -26,12 +26,24 @@ class CalorieIntakeViewController: UIViewController {
     
     @IBOutlet weak var addButton: UIButton!
     
-    @IBOutlet weak var updateButton: UIButton!
-    
+
     @IBOutlet weak var clearButton: UIButton!
     
     @IBAction func Add(_ sender: UIButton) {
         let textHolder = finalOutput.text
+        
+        
+        if foodText.text == "" || calorieText.text == "" {
+            let title = "Warning"
+            let message = "You need to enter a food and calorie count to add it to the list"
+            
+            let alertController = UIAlertController( title: title, message: message, preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+            alertController.addAction(okAction)
+            present(alertController, animated: true, completion: nil)
+            
+        } else {
+        
         
         //place holder arrays
         foodArray.append(foodText.text!)
@@ -46,7 +58,7 @@ class CalorieIntakeViewController: UIViewController {
         foodText.text = ""
         calorieText.text = ""
         
-        
+        }
         
     }
     
@@ -87,7 +99,6 @@ class CalorieIntakeViewController: UIViewController {
         super.viewDidLoad()
         scanButton.layer.cornerRadius = 4
         addButton.layer.cornerRadius = 4
-        updateButton.layer.cornerRadius = 4
         clearButton.layer.cornerRadius = 4
         
         self.view.addGestureRecognizer(UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:))))

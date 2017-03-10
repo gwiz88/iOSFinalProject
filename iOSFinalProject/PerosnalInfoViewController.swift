@@ -35,9 +35,20 @@ var passWeight = 0
         let heightDouble: Double? = Double(inches.text!)
         let weightDouble: Double? = Double(pounds.text!)
         
-        passWeight = Int(weightDouble!)
     
     
+    if years.text == "" || inches.text == "" || pounds.text == ""{
+        let title = "Warning"
+        let message = "You need to enter your information, please enter your all of your personal information."
+        
+        let alertController = UIAlertController( title: title, message: message, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+        alertController.addAction(okAction)
+        present(alertController, animated: true, completion: nil)
+        
+    }else{
+        
+    passWeight = Int(weightDouble!)
     if dailyActivity.selectedSegmentIndex == 0{
         activityModifier = 1.2
         activityText = "Your Maintence Calories at No Daily Activity is: "
@@ -79,7 +90,7 @@ var passWeight = 0
         }
     
         
-        
+    }
     }
     
     
