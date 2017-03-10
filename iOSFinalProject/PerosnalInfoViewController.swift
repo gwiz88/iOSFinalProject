@@ -14,6 +14,7 @@ var BMRFinal = 0.0
     
 var passWeight = 0
     
+@IBOutlet weak var dailyActivity: UISegmentedControl!
 @IBOutlet weak var genderSelect: UISegmentedControl!
     
 @IBOutlet weak var years: UITextField!
@@ -28,11 +29,34 @@ var passWeight = 0
     
     
 @IBAction func Calculate(_ sender: UIButton) {
+        var activityModifier = 0.0
+        var activityText = ""
         let ageDouble: Double? = Double(years.text!)
         let heightDouble: Double? = Double(inches.text!)
         let weightDouble: Double? = Double(pounds.text!)
         
         passWeight = Int(weightDouble!)
+    
+    
+    if dailyActivity.selectedSegmentIndex == 0{
+        activityModifier = 1.2
+        activityText = "Your Maintence Calories at No Daily Activity is: "
+    }
+    if dailyActivity.selectedSegmentIndex == 1{
+        activityModifier = 1.375
+        activityText = "Your Maintence Calories at Light Daily Activity is:  "
+    }
+    if dailyActivity.selectedSegmentIndex == 2{
+        activityModifier = 1.55
+        activityText = "Your Maintence Calories at Moderate Daily Activity is: "
+    }
+    if dailyActivity.selectedSegmentIndex == 3{
+        activityModifier = 1.725
+        activityText = "Your Maintence Calories at Heavy Daily Activity is: "
+    }
+    
+    
+    
     
         if genderSelect.selectedSegmentIndex == 0 {
             let BMR1 = 66.5 + (6.2 * weightDouble!)
@@ -40,8 +64,8 @@ var passWeight = 0
             let BMR3 = (6.76 * ageDouble!)
             let BMRMale = BMR1 + BMR2 - BMR3
             
-            outputText.text = "No Activity "+String(BMRMale * 1.2) + "\n" + "Light Exercise " + String(BMRMale*1.375) + "\n"
-            BMRFinal = (BMRMale * 1.2)
+            BMRFinal = (BMRMale * activityModifier)
+            outputText.text = activityText+"\n"+String(BMRFinal)
         }
         else{
             let BMR4 = 655.1 + (4.35 * weightDouble!)
@@ -49,10 +73,11 @@ var passWeight = 0
             let BMR6 = (4.7 * ageDouble!)
             let BMRFemale = BMR4 + BMR5 - BMR6
             
-            outputText.text = "No Activity "+String(BMRFemale * 1.2) + "\n" + "Light Exercise " + String(BMRFemale*1.375) + "\n"
-            BMRFinal = (BMRFemale * 1.2)
+
+            BMRFinal = (BMRFemale * activityModifier)
+            outputText.text = activityText+"\n"+String(BMRFinal)
         }
-        
+    
         
         
     }
