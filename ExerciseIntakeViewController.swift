@@ -852,7 +852,6 @@ class ExerciseIntakeViewController: UIViewController,UIPickerViewDataSource, UIP
         super.viewDidLoad()
         grabButton.layer.cornerRadius = 4
         addButton.layer.cornerRadius = 4
-        updateButton.layer.cornerRadius = 4
         clearButton.layer.cornerRadius = 4
         // Do any additional setup after loading the view.
         
