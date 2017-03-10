@@ -33,6 +33,7 @@ class ExerciseIntakeViewController: UIViewController,UIPickerViewDataSource, UIP
     
     @IBOutlet weak var weightHolder: UITextField!
 
+    @IBOutlet weak var pickerLabel: UIPickerView!
     
     @IBOutlet weak var exerciseOutput: UITextView!
     
@@ -41,6 +42,15 @@ class ExerciseIntakeViewController: UIViewController,UIPickerViewDataSource, UIP
     
     
     @IBOutlet weak var finalExercise: UILabel!
+    
+    @IBOutlet weak var grabButton: UIButton!
+    
+    @IBOutlet weak var addButton: UIButton!
+    
+    @IBOutlet weak var updateButton: UIButton!
+    
+    @IBOutlet weak var clearButton: UIButton!
+    
     
     @IBAction func grabWeight(_ sender: UIButton) {
         //grabbedWeight = Double(weightHolder.text!)!
@@ -389,7 +399,10 @@ class ExerciseIntakeViewController: UIViewController,UIPickerViewDataSource, UIP
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        grabButton.layer.cornerRadius = 4
+        addButton.layer.cornerRadius = 4
+        updateButton.layer.cornerRadius = 4
+        clearButton.layer.cornerRadius = 4
         // Do any additional setup after loading the view.
     }
 
