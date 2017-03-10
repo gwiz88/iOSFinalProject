@@ -10,9 +10,14 @@ import UIKit
 
 
 let exerciseType = [
-    "Jogging",
+    "Running",
     "Swimming",
-    "Yoga"
+    "Yoga",
+    "Weight Training",
+    "Bicycling",
+    "Martial Arts",
+    "Walking",
+    "Hiking"
 ]
 
 let timeLength = [
@@ -73,7 +78,7 @@ class ExerciseIntakeViewController: UIViewController,UIPickerViewDataSource, UIP
         
         //from here
         
-        if exerciseType[picker.selectedRow(inComponent: 0)] == "Jogging"{
+        if exerciseType[picker.selectedRow(inComponent: 0)] == "Running"{
              base240 = 905
              base200 = 755
              base160 = 606
@@ -91,7 +96,7 @@ class ExerciseIntakeViewController: UIViewController,UIPickerViewDataSource, UIP
                     
                 }
                     
-                else if grabbedWeight < 240.0 && grabbedWeight > 200.0  {
+                else if grabbedWeight < 240.0 && grabbedWeight >= 200.0  {
                     exerciseCount.append(base200/4)
                     exerciseCalorie += (base200/4)
                     finalExercise.text = String(exerciseCalorie)
@@ -116,7 +121,7 @@ class ExerciseIntakeViewController: UIViewController,UIPickerViewDataSource, UIP
 
                 }
                     
-                else if grabbedWeight < 240.0 && grabbedWeight > 200.0  {
+                else if grabbedWeight < 240.0 && grabbedWeight >= 200.0  {
                     exerciseCount.append(base200/2)
                     exerciseCalorie += (base200/2)
                     finalExercise.text = String(exerciseCalorie)
@@ -140,7 +145,7 @@ class ExerciseIntakeViewController: UIViewController,UIPickerViewDataSource, UIP
             
                 }
                 
-                else if grabbedWeight < 240.0 && grabbedWeight > 200.0  {
+                else if grabbedWeight < 240.0 && grabbedWeight >= 200.0  {
                     exerciseCount.append(base200)
                     exerciseCalorie += base200
                     
@@ -178,7 +183,7 @@ class ExerciseIntakeViewController: UIViewController,UIPickerViewDataSource, UIP
                     
                 }
                     
-                else if grabbedWeight < 240.0 && grabbedWeight > 200.0  {
+                else if grabbedWeight < 240.0 && grabbedWeight >= 200.0  {
                     exerciseCount.append(base200/4)
                     exerciseCalorie += (base200/4)
                     finalExercise.text = String(exerciseCalorie)
@@ -203,7 +208,7 @@ class ExerciseIntakeViewController: UIViewController,UIPickerViewDataSource, UIP
                     
                 }
                     
-                else if grabbedWeight < 240.0 && grabbedWeight > 200.0  {
+                else if grabbedWeight < 240.0 && grabbedWeight >= 200.0  {
                     exerciseCount.append(base200/2)
                     exerciseCalorie += (base200/2)
                     finalExercise.text = String(exerciseCalorie)
@@ -227,7 +232,7 @@ class ExerciseIntakeViewController: UIViewController,UIPickerViewDataSource, UIP
                     
                 }
                     
-                else if grabbedWeight < 240.0 && grabbedWeight > 200.0  {
+                else if grabbedWeight < 240.0 && grabbedWeight >= 200.0  {
                     exerciseCount.append(base200)
                     exerciseCalorie += base200
                     
@@ -265,7 +270,7 @@ class ExerciseIntakeViewController: UIViewController,UIPickerViewDataSource, UIP
                     
                 }
                     
-                else if grabbedWeight < 240.0 && grabbedWeight > 200.0  {
+                else if grabbedWeight < 240.0 && grabbedWeight >= 200.0  {
                     exerciseCount.append(base200/4)
                     exerciseCalorie += (base200/4)
                     finalExercise.text = String(exerciseCalorie)
@@ -290,7 +295,7 @@ class ExerciseIntakeViewController: UIViewController,UIPickerViewDataSource, UIP
                     
                 }
                     
-                else if grabbedWeight < 240.0 && grabbedWeight > 200.0  {
+                else if grabbedWeight < 240.0 && grabbedWeight >= 200.0  {
                     exerciseCount.append(base200/2)
                     exerciseCalorie += (base200/2)
                     finalExercise.text = String(exerciseCalorie)
@@ -314,7 +319,7 @@ class ExerciseIntakeViewController: UIViewController,UIPickerViewDataSource, UIP
                     
                 }
                     
-                else if grabbedWeight < 240.0 && grabbedWeight > 200.0  {
+                else if grabbedWeight < 240.0 && grabbedWeight >= 200.0  {
                     exerciseCount.append(base200)
                     exerciseCalorie += base200
                     
@@ -330,7 +335,441 @@ class ExerciseIntakeViewController: UIViewController,UIPickerViewDataSource, UIP
                 
                 
             }
+        }
             
+             else if exerciseType[picker.selectedRow(inComponent: 0)] == "Weight Training"{
+                base240 = 545
+                base200 = 455
+                base160 = 365
+                
+                exerciseArray.append(exerciseType[picker.selectedRow(inComponent: 0)])
+                
+                
+                if timeLength[picker.selectedRow(inComponent: 1)] == "15 min" {
+                    
+                    if grabbedWeight >= 240.0{
+                        exerciseCount.append(base240/4)
+                        exerciseCalorie += base240/4
+                        
+                        finalExercise.text = String(exerciseCalorie)
+                        
+                    }
+                        
+                    else if grabbedWeight < 240.0 && grabbedWeight >= 200.0  {
+                        exerciseCount.append(base200/4)
+                        exerciseCalorie += (base200/4)
+                        finalExercise.text = String(exerciseCalorie)
+                        
+                    }
+                    else if grabbedWeight < 200.0 {
+                        exerciseCount.append(base160/4)
+                        exerciseCalorie += (base160/4)
+                        finalExercise.text = String(exerciseCalorie)
+                        
+                    }
+                    
+                    
+                    
+                }
+                else if timeLength[picker.selectedRow(inComponent: 1)] == "30 min" {
+                    
+                    if grabbedWeight >= 240.0{
+                        exerciseCount.append(base240/2)
+                        exerciseCalorie += (base240/2)
+                        finalExercise.text = String(exerciseCalorie)
+                        
+                    }
+                        
+                    else if grabbedWeight < 240.0 && grabbedWeight >= 200.0  {
+                        exerciseCount.append(base200/2)
+                        exerciseCalorie += (base200/2)
+                        finalExercise.text = String(exerciseCalorie)
+                        
+                    }
+                    else if grabbedWeight < 200.0 {
+                        exerciseCount.append(base160/2)
+                        exerciseCalorie += (base160/2)
+                        finalExercise.text = String(exerciseCalorie)
+                        
+                    }
+                    
+                    
+                    
+                }
+                else if timeLength[picker.selectedRow(inComponent: 1)] == "60 min" {
+                    
+                    if grabbedWeight >= 240.0{
+                        exerciseCount.append(base240)
+                        exerciseCalorie += base240
+                        
+                    }
+                        
+                    else if grabbedWeight < 240.0 && grabbedWeight >= 200.0  {
+                        exerciseCount.append(base200)
+                        exerciseCalorie += base200
+                        
+                        
+                    }
+                    else if grabbedWeight < 200.0 {
+                        exerciseCount.append(base160)
+                        exerciseCalorie += base160
+                        
+                        
+                        
+                    }
+                    
+                    
+                }
+                
+                
+            }//end of weight Training statement
+            
+             else if exerciseType[picker.selectedRow(inComponent: 0)] == "Bicycling"{
+                base240 = 436
+                base200 = 364
+                base160 = 292
+                
+                exerciseArray.append(exerciseType[picker.selectedRow(inComponent: 0)])
+                
+                
+                if timeLength[picker.selectedRow(inComponent: 1)] == "15 min" {
+                    
+                    if grabbedWeight >= 240.0{
+                        exerciseCount.append(base240/4)
+                        exerciseCalorie += base240/4
+                        
+                        finalExercise.text = String(exerciseCalorie)
+                        
+                    }
+                        
+                    else if grabbedWeight < 240.0 && grabbedWeight >= 200.0  {
+                        exerciseCount.append(base200/4)
+                        exerciseCalorie += (base200/4)
+                        finalExercise.text = String(exerciseCalorie)
+                        
+                    }
+                    else if grabbedWeight < 200.0 {
+                        exerciseCount.append(base160/4)
+                        exerciseCalorie += (base160/4)
+                        finalExercise.text = String(exerciseCalorie)
+                        
+                    }
+                    
+                    
+                    
+                }
+                else if timeLength[picker.selectedRow(inComponent: 1)] == "30 min" {
+                    
+                    if grabbedWeight >= 240.0{
+                        exerciseCount.append(base240/2)
+                        exerciseCalorie += (base240/2)
+                        finalExercise.text = String(exerciseCalorie)
+                        
+                    }
+                        
+                    else if grabbedWeight < 240.0 && grabbedWeight >= 200.0  {
+                        exerciseCount.append(base200/2)
+                        exerciseCalorie += (base200/2)
+                        finalExercise.text = String(exerciseCalorie)
+                        
+                    }
+                    else if grabbedWeight < 200.0 {
+                        exerciseCount.append(base160/2)
+                        exerciseCalorie += (base160/2)
+                        finalExercise.text = String(exerciseCalorie)
+                        
+                    }
+                    
+                    
+                    
+                }
+                else if timeLength[picker.selectedRow(inComponent: 1)] == "60 min" {
+                    
+                    if grabbedWeight >= 240.0{
+                        exerciseCount.append(base240)
+                        exerciseCalorie += base240
+                        
+                    }
+                        
+                    else if grabbedWeight < 240.0 && grabbedWeight >= 200.0  {
+                        exerciseCount.append(base200)
+                        exerciseCalorie += base200
+                        
+                        
+                    }
+                    else if grabbedWeight < 200.0 {
+                        exerciseCount.append(base160)
+                        exerciseCalorie += base160
+                        
+                        
+                        
+                    }
+                    
+                    
+                }
+                
+                
+            }//end of Bicycling statement
+            
+            else if exerciseType[picker.selectedRow(inComponent: 0)] == "Martial Arts"{
+                base240 = 1068
+                base200 = 892
+                base160 = 752
+                
+                exerciseArray.append(exerciseType[picker.selectedRow(inComponent: 0)])
+                
+                
+                if timeLength[picker.selectedRow(inComponent: 1)] == "15 min" {
+                    
+                    if grabbedWeight >= 240.0{
+                        exerciseCount.append(base240/4)
+                        exerciseCalorie += base240/4
+                        
+                        finalExercise.text = String(exerciseCalorie)
+                        
+                    }
+                        
+                    else if grabbedWeight < 240.0 && grabbedWeight >= 200.0  {
+                        exerciseCount.append(base200/4)
+                        exerciseCalorie += (base200/4)
+                        finalExercise.text = String(exerciseCalorie)
+                        
+                    }
+                    else if grabbedWeight < 200.0 {
+                        exerciseCount.append(base160/4)
+                        exerciseCalorie += (base160/4)
+                        finalExercise.text = String(exerciseCalorie)
+                        
+                    }
+                    
+                    
+                    
+                }
+                else if timeLength[picker.selectedRow(inComponent: 1)] == "30 min" {
+                    
+                    if grabbedWeight >= 240.0{
+                        exerciseCount.append(base240/2)
+                        exerciseCalorie += (base240/2)
+                        finalExercise.text = String(exerciseCalorie)
+                        
+                    }
+                        
+                    else if grabbedWeight < 240.0 && grabbedWeight >= 200.0  {
+                        exerciseCount.append(base200/2)
+                        exerciseCalorie += (base200/2)
+                        finalExercise.text = String(exerciseCalorie)
+                        
+                    }
+                    else if grabbedWeight < 200.0 {
+                        exerciseCount.append(base160/2)
+                        exerciseCalorie += (base160/2)
+                        finalExercise.text = String(exerciseCalorie)
+                        
+                    }
+                    
+                    
+                    
+                }
+                else if timeLength[picker.selectedRow(inComponent: 1)] == "60 min" {
+                    
+                    if grabbedWeight >= 240.0{
+                        exerciseCount.append(base240)
+                        exerciseCalorie += base240
+                        
+                    }
+                        
+                    else if grabbedWeight < 240.0 && grabbedWeight >= 200.0  {
+                        exerciseCount.append(base200)
+                        exerciseCalorie += base200
+                        
+                        
+                    }
+                    else if grabbedWeight < 200.0 {
+                        exerciseCount.append(base160)
+                        exerciseCalorie += base160
+                        
+                        
+                        
+                    }
+                    
+                    
+                }
+                
+                
+            }//end of martial Arts statement
+            else if exerciseType[picker.selectedRow(inComponent: 0)] == "Walking"{
+                base240 = 305
+                base200 = 255
+                base160 = 204
+                
+                exerciseArray.append(exerciseType[picker.selectedRow(inComponent: 0)])
+                
+                
+                if timeLength[picker.selectedRow(inComponent: 1)] == "15 min" {
+                    
+                    if grabbedWeight >= 240.0{
+                        exerciseCount.append(base240/4)
+                        exerciseCalorie += base240/4
+                        
+                        finalExercise.text = String(exerciseCalorie)
+                        
+                    }
+                        
+                    else if grabbedWeight < 240.0 && grabbedWeight >= 200.0  {
+                        exerciseCount.append(base200/4)
+                        exerciseCalorie += (base200/4)
+                        finalExercise.text = String(exerciseCalorie)
+                        
+                    }
+                    else if grabbedWeight < 200.0 {
+                        exerciseCount.append(base160/4)
+                        exerciseCalorie += (base160/4)
+                        finalExercise.text = String(exerciseCalorie)
+                        
+                    }
+                    
+                    
+                    
+                }
+                else if timeLength[picker.selectedRow(inComponent: 1)] == "30 min" {
+                    
+                    if grabbedWeight >= 240.0{
+                        exerciseCount.append(base240/2)
+                        exerciseCalorie += (base240/2)
+                        finalExercise.text = String(exerciseCalorie)
+                        
+                    }
+                        
+                    else if grabbedWeight < 240.0 && grabbedWeight >= 200.0  {
+                        exerciseCount.append(base200/2)
+                        exerciseCalorie += (base200/2)
+                        finalExercise.text = String(exerciseCalorie)
+                        
+                    }
+                    else if grabbedWeight < 200.0 {
+                        exerciseCount.append(base160/2)
+                        exerciseCalorie += (base160/2)
+                        finalExercise.text = String(exerciseCalorie)
+                        
+                    }
+                    
+                    
+                    
+                }
+                else if timeLength[picker.selectedRow(inComponent: 1)] == "60 min" {
+                    
+                    if grabbedWeight >= 240.0{
+                        exerciseCount.append(base240)
+                        exerciseCalorie += base240
+                        
+                    }
+                        
+                    else if grabbedWeight < 240.0 && grabbedWeight >= 200.0  {
+                        exerciseCount.append(base200)
+                        exerciseCalorie += base200
+                        
+                        
+                    }
+                    else if grabbedWeight < 200.0 {
+                        exerciseCount.append(base160)
+                        exerciseCalorie += base160
+                        
+                        
+                        
+                    }
+                    
+                    
+                }
+                
+                
+            }//end of walking statement
+            
+            else if exerciseType[picker.selectedRow(inComponent: 0)] == "Hiking"{
+                base240 = 654
+                base200 = 546
+                base160 = 438
+                
+                exerciseArray.append(exerciseType[picker.selectedRow(inComponent: 0)])
+                
+                
+                if timeLength[picker.selectedRow(inComponent: 1)] == "15 min" {
+                    
+                    if grabbedWeight >= 240.0{
+                        exerciseCount.append(base240/4)
+                        exerciseCalorie += base240/4
+                        
+                        finalExercise.text = String(exerciseCalorie)
+                        
+                    }
+                        
+                    else if grabbedWeight < 240.0 && grabbedWeight >= 200.0  {
+                        exerciseCount.append(base200/4)
+                        exerciseCalorie += (base200/4)
+                        finalExercise.text = String(exerciseCalorie)
+                        
+                    }
+                    else if grabbedWeight < 200.0 {
+                        exerciseCount.append(base160/4)
+                        exerciseCalorie += (base160/4)
+                        finalExercise.text = String(exerciseCalorie)
+                        
+                    }
+                    
+                    
+                    
+                }
+                else if timeLength[picker.selectedRow(inComponent: 1)] == "30 min" {
+                    
+                    if grabbedWeight >= 240.0{
+                        exerciseCount.append(base240/2)
+                        exerciseCalorie += (base240/2)
+                        finalExercise.text = String(exerciseCalorie)
+                        
+                    }
+                        
+                    else if grabbedWeight < 240.0 && grabbedWeight >= 200.0  {
+                        exerciseCount.append(base200/2)
+                        exerciseCalorie += (base200/2)
+                        finalExercise.text = String(exerciseCalorie)
+                        
+                    }
+                    else if grabbedWeight < 200.0 {
+                        exerciseCount.append(base160/2)
+                        exerciseCalorie += (base160/2)
+                        finalExercise.text = String(exerciseCalorie)
+                        
+                    }
+                    
+                    
+                    
+                }
+                else if timeLength[picker.selectedRow(inComponent: 1)] == "60 min" {
+                    
+                    if grabbedWeight >= 240.0{
+                        exerciseCount.append(base240)
+                        exerciseCalorie += base240
+                        
+                    }
+                        
+                    else if grabbedWeight < 240.0 && grabbedWeight >= 200.0  {
+                        exerciseCount.append(base200)
+                        exerciseCalorie += base200
+                        
+                        
+                    }
+                    else if grabbedWeight < 200.0 {
+                        exerciseCount.append(base160)
+                        exerciseCalorie += base160
+                        
+                        
+                        
+                    }
+                    
+                    
+                }
+                
+                
+          //end of activities
             
         }
         
@@ -404,6 +843,10 @@ class ExerciseIntakeViewController: UIViewController,UIPickerViewDataSource, UIP
         updateButton.layer.cornerRadius = 4
         clearButton.layer.cornerRadius = 4
         // Do any additional setup after loading the view.
+        
+        
+        
+         self.view.addGestureRecognizer(UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:))))
     }
 
     override func didReceiveMemoryWarning() {
