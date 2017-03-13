@@ -22,6 +22,7 @@
 		57C6FB1F1E662E2B0097C0BA /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C6FB1E1E662E2B0097C0BA /* ScannerViewController.swift */; };
 		57C6FB211E6633C90097C0BA /* ExerciseIntakeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C6FB201E6633C90097C0BA /* ExerciseIntakeViewController.swift */; };
 		A13278621E69E6B20020C290 /* ActualCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13278611E69E6B20020C290 /* ActualCameraViewController.swift */; };
+		CED519B91E74A189000F9E0D /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED519B81E74A189000F9E0D /* constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +105,7 @@
 		57C6FB1E1E662E2B0097C0BA /* ScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
 		57C6FB201E6633C90097C0BA /* ExerciseIntakeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExerciseIntakeViewController.swift; path = ../ExerciseIntakeViewController.swift; sourceTree = "<group>"; };
 		A13278611E69E6B20020C290 /* ActualCameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActualCameraViewController.swift; sourceTree = "<group>"; };
+		CED519B81E74A189000F9E0D /* constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +180,7 @@
 				57C6FAF11E662BB10097C0BA /* Assets.xcassets */,
 				57C6FAF31E662BB10097C0BA /* LaunchScreen.storyboard */,
 				57C6FAF61E662BB10097C0BA /* Info.plist */,
+				CED519B81E74A189000F9E0D /* constants.swift */,
 			);
 			path = iOSFinalProject;
 			sourceTree = "<group>";
@@ -369,6 +372,7 @@
 			files = (
 				57C6FB211E6633C90097C0BA /* ExerciseIntakeViewController.swift in Sources */,
 				57C6FB1F1E662E2B0097C0BA /* ScannerViewController.swift in Sources */,
+				CED519B91E74A189000F9E0D /* constants.swift in Sources */,
 				A13278621E69E6B20020C290 /* ActualCameraViewController.swift in Sources */,
 				57C6FB1D1E662E1E0097C0BA /* CalorieIntakeViewController.swift in Sources */,
 				57C6FB1B1E662E0C0097C0BA /* TrackingViewController.swift in Sources */,

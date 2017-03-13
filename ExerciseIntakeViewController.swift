@@ -45,7 +45,6 @@ class ExerciseIntakeViewController: UIViewController,UIPickerViewDataSource, UIP
     
     @IBOutlet weak var picker: UIPickerView!
     
-    
     @IBOutlet weak var finalExercise: UILabel!
     
     @IBOutlet weak var grabButton: UIButton!
@@ -59,7 +58,7 @@ class ExerciseIntakeViewController: UIViewController,UIPickerViewDataSource, UIP
     
     @IBAction func grabWeight(_ sender: UIButton) {
        
-        
+    //self.pickerLabel.setValue(UIColor.white, forKey: "textColor")
         
         //grabbedWeight = Double(weightHolder.text!)!
         
@@ -814,6 +813,7 @@ class ExerciseIntakeViewController: UIViewController,UIPickerViewDataSource, UIP
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        
         if component == 0 {
             return exerciseType.count
         } else {
@@ -822,17 +822,30 @@ class ExerciseIntakeViewController: UIViewController,UIPickerViewDataSource, UIP
     }
     
     // MARK: UIPickerViewDelegate
-    
+   /*
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        
         if component == 0 {
+            _ = NSAttributedString(string: exerciseType[row], attributes: [NSForegroundColorAttributeName : UIColor.white])
+            //return attributedString
             return exerciseType[row]
         } else {
             return timeLength[row]
         }
     }
+    */
+    func pickerView(_ pickerView: UIPickerView, attributedTitleForRow row: Int, forComponent component: Int) -> NSAttributedString? {
+        if component == 0 {
+        let attributedString = NSAttributedString(string: exerciseType[row], attributes: [NSForegroundColorAttributeName : UIColor.white])
+        return attributedString
+        }
+        else {
+            let attributedString = NSAttributedString(string: timeLength[row], attributes: [NSForegroundColorAttributeName : UIColor.white])
+            return attributedString
+        }
+    }
     
-  
-    
+ 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
@@ -857,15 +870,18 @@ class ExerciseIntakeViewController: UIViewController,UIPickerViewDataSource, UIP
     
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         grabButton.layer.cornerRadius = 4
         addButton.layer.cornerRadius = 4
         clearButton.layer.cornerRadius = 4
         // Do any additional setup after loading the view.
-        
-        
+        //self.pickerLabel.setValue(UIColor.white, forKey: "textColor")
+
+       // pickerLabel.setValue(UIColor.white, forKeyPath: "textColor")
         
          self.view.addGestureRecognizer(UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:))))
+       // self.pickerLabel.setValue(UIColor.white, forKey: "textColor")
     }
 
     override func didReceiveMemoryWarning() {
