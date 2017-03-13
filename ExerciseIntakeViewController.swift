@@ -45,7 +45,6 @@ class ExerciseIntakeViewController: UIViewController,UIPickerViewDataSource, UIP
     
     @IBOutlet weak var picker: UIPickerView!
     
-    
     @IBOutlet weak var finalExercise: UILabel!
     
     @IBOutlet weak var grabButton: UIButton!
@@ -59,7 +58,7 @@ class ExerciseIntakeViewController: UIViewController,UIPickerViewDataSource, UIP
     
     @IBAction func grabWeight(_ sender: UIButton) {
        
-        
+    //self.pickerLabel.setValue(UIColor.white, forKey: "textColor")
         
         //grabbedWeight = Double(weightHolder.text!)!
         
@@ -854,10 +853,11 @@ class ExerciseIntakeViewController: UIViewController,UIPickerViewDataSource, UIP
         addButton.layer.cornerRadius = 4
         clearButton.layer.cornerRadius = 4
         // Do any additional setup after loading the view.
-        
+        //self.pickerLabel.setValue(UIColor.white, forKey: "textColor")
         
         
          self.view.addGestureRecognizer(UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:))))
+        self.pickerLabel.setValue(UIColor.white, forKey: "textColor")
     }
 
     override func didReceiveMemoryWarning() {
