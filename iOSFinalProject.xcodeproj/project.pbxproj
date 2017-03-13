@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		579719861E7713F0007CD01C /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 579719811E7713E4007CD01C /* Charts.framework */; };
-		579719871E7713F0007CD01C /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 579719811E7713E4007CD01C /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		57C6FAE91E662BB10097C0BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C6FAE81E662BB10097C0BA /* AppDelegate.swift */; };
 		57C6FAEB1E662BB10097C0BA /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C6FAEA1E662BB10097C0BA /* MainViewController.swift */; };
 		57C6FAF01E662BB10097C0BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57C6FAEE1E662BB10097C0BA /* Main.storyboard */; };
@@ -26,33 +24,26 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		579719801E7713E4007CD01C /* PBXContainerItemProxy */ = {
+		578392951E772973009258DB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 5797197A1E7713E4007CD01C /* Charts.xcodeproj */;
+			containerPortal = 5783928F1E772973009258DB /* Charts.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 06165F241D8110E600722320;
 			remoteInfo = Charts;
 		};
-		579719821E7713E4007CD01C /* PBXContainerItemProxy */ = {
+		578392971E772973009258DB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 5797197A1E7713E4007CD01C /* Charts.xcodeproj */;
+			containerPortal = 5783928F1E772973009258DB /* Charts.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 06B120D51D811E6200D14B02;
 			remoteInfo = ChartsRealm;
 		};
-		579719841E7713E4007CD01C /* PBXContainerItemProxy */ = {
+		578392991E772973009258DB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 5797197A1E7713E4007CD01C /* Charts.xcodeproj */;
+			containerPortal = 5783928F1E772973009258DB /* Charts.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 06165F2E1D8110E600722320;
 			remoteInfo = ChartsTests;
-		};
-		579719881E7713F0007CD01C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5797197A1E7713E4007CD01C /* Charts.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 06165F231D8110E600722320;
-			remoteInfo = Charts;
 		};
 		57C6FAFC1E662BB20097C0BA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -77,7 +68,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				579719871E7713F0007CD01C /* Charts.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -85,7 +75,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		5797197A1E7713E4007CD01C /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "../../Charts-master/Charts.xcodeproj"; sourceTree = "<group>"; };
+		5783928F1E772973009258DB /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Charts.xcodeproj; sourceTree = "<group>"; };
 		57C6FAE51E662BB10097C0BA /* iOSFinalProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSFinalProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57C6FAE81E662BB10097C0BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		57C6FAEA1E662BB10097C0BA /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -113,7 +103,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				579719861E7713F0007CD01C /* Charts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,12 +123,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5797197B1E7713E4007CD01C /* Products */ = {
+		578392901E772973009258DB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				579719811E7713E4007CD01C /* Charts.framework */,
-				579719831E7713E4007CD01C /* ChartsRealm.framework */,
-				579719851E7713E4007CD01C /* ChartsTests.xctest */,
+				578392961E772973009258DB /* Charts.framework */,
+				578392981E772973009258DB /* ChartsRealm.framework */,
+				5783929A1E772973009258DB /* ChartsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -176,7 +165,7 @@
 				57C6FB1A1E662E0C0097C0BA /* TrackingViewController.swift */,
 				57C6FB1C1E662E1E0097C0BA /* CalorieIntakeViewController.swift */,
 				57C6FB1E1E662E2B0097C0BA /* ScannerViewController.swift */,
-				5797197A1E7713E4007CD01C /* Charts.xcodeproj */,
+				5783928F1E772973009258DB /* Charts.xcodeproj */,
 				57C6FAF11E662BB10097C0BA /* Assets.xcassets */,
 				57C6FAF31E662BB10097C0BA /* LaunchScreen.storyboard */,
 				57C6FAF61E662BB10097C0BA /* Info.plist */,
@@ -218,7 +207,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				579719891E7713F0007CD01C /* PBXTargetDependency */,
 			);
 			name = iOSFinalProject;
 			productName = iOSFinalProject;
@@ -273,7 +261,7 @@
 				TargetAttributes = {
 					57C6FAE41E662BB10097C0BA = {
 						CreatedOnToolsVersion = 8.2;
-						DevelopmentTeam = 8Q9Y8CHMFG;
+						DevelopmentTeam = MQ79U7S5FQ;
 						ProvisioningStyle = Automatic;
 					};
 					57C6FAFA1E662BB20097C0BA = {
@@ -301,8 +289,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 5797197B1E7713E4007CD01C /* Products */;
-					ProjectRef = 5797197A1E7713E4007CD01C /* Charts.xcodeproj */;
+					ProductGroup = 578392901E772973009258DB /* Products */;
+					ProjectRef = 5783928F1E772973009258DB /* Charts.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -315,25 +303,25 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		579719811E7713E4007CD01C /* Charts.framework */ = {
+		578392961E772973009258DB /* Charts.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = Charts.framework;
-			remoteRef = 579719801E7713E4007CD01C /* PBXContainerItemProxy */;
+			remoteRef = 578392951E772973009258DB /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		579719831E7713E4007CD01C /* ChartsRealm.framework */ = {
+		578392981E772973009258DB /* ChartsRealm.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = ChartsRealm.framework;
-			remoteRef = 579719821E7713E4007CD01C /* PBXContainerItemProxy */;
+			remoteRef = 578392971E772973009258DB /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		579719851E7713E4007CD01C /* ChartsTests.xctest */ = {
+		5783929A1E772973009258DB /* ChartsTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = ChartsTests.xctest;
-			remoteRef = 579719841E7713E4007CD01C /* PBXContainerItemProxy */;
+			remoteRef = 578392991E772973009258DB /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -401,11 +389,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		579719891E7713F0007CD01C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Charts;
-			targetProxy = 579719881E7713F0007CD01C /* PBXContainerItemProxy */;
-		};
 		57C6FAFD1E662BB20097C0BA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 57C6FAE41E662BB10097C0BA /* iOSFinalProject */;
@@ -534,7 +517,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 8Q9Y8CHMFG;
+				DEVELOPMENT_TEAM = MQ79U7S5FQ;
 				INFOPLIST_FILE = iOSFinalProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Depaul-University.iOSFinalProject";
@@ -548,7 +531,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 8Q9Y8CHMFG;
+				DEVELOPMENT_TEAM = MQ79U7S5FQ;
 				INFOPLIST_FILE = iOSFinalProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Depaul-University.iOSFinalProject";
