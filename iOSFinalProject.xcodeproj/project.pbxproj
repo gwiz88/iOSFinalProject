@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5783929B1E772A1F009258DB /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 578392961E772973009258DB /* Charts.framework */; };
+		5783929C1E772A1F009258DB /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 578392961E772973009258DB /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		57C6FAE91E662BB10097C0BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C6FAE81E662BB10097C0BA /* AppDelegate.swift */; };
 		57C6FAEB1E662BB10097C0BA /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C6FAEA1E662BB10097C0BA /* MainViewController.swift */; };
 		57C6FAF01E662BB10097C0BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57C6FAEE1E662BB10097C0BA /* Main.storyboard */; };
@@ -45,6 +47,13 @@
 			remoteGlobalIDString = 06165F2E1D8110E600722320;
 			remoteInfo = ChartsTests;
 		};
+		5783929D1E772A1F009258DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5783928F1E772973009258DB /* Charts.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 06165F231D8110E600722320;
+			remoteInfo = Charts;
+		};
 		57C6FAFC1E662BB20097C0BA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 57C6FADD1E662BB10097C0BA /* Project object */;
@@ -68,6 +77,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				5783929C1E772A1F009258DB /* Charts.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -103,6 +113,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5783929B1E772A1F009258DB /* Charts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,6 +218,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				5783929E1E772A1F009258DB /* PBXTargetDependency */,
 			);
 			name = iOSFinalProject;
 			productName = iOSFinalProject;
@@ -389,6 +401,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		5783929E1E772A1F009258DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Charts;
+			targetProxy = 5783929D1E772A1F009258DB /* PBXContainerItemProxy */;
+		};
 		57C6FAFD1E662BB20097C0BA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 57C6FAE41E662BB10097C0BA /* iOSFinalProject */;
