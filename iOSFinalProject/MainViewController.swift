@@ -13,7 +13,7 @@ class FirstViewController: UIViewController {
     var gotPersonal: Int = 0
     
     var gotFood: Int = 0
-    
+
     var gotExercise: Int = 0
     
     var finalCalorie: Int = 0

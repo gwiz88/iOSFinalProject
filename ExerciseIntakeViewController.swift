@@ -841,6 +841,14 @@ class ExerciseIntakeViewController: UIViewController,UIPickerViewDataSource, UIP
             if let destination = segue.destination as? FirstViewController {
                 destination.gotPersonal = Int(exerciseCalorie)
             }
+            if let destination = segue.destination as? TrackingViewController {
+                
+                destination.gotExCalArray = exerciseCount
+                destination.gotExerciseArray = exerciseArray
+                
+            }
+            
+            
         }
     }
 

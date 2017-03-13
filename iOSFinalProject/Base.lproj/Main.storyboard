@@ -300,7 +300,7 @@
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="0" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="MV3-8N-7aS">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="MV3-8N-7aS">
                                 <rect key="frame" x="60" y="421" width="255" height="156"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.13307297230000001" green="0.1318865716" blue="0.1981847286" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -564,13 +564,47 @@
                     <view key="view" contentMode="scaleToFill" id="aFE-Bf-usJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Aow-aQ-YPt" customClass="PieChartView" customModule="Charts">
+                                <rect key="frame" x="16" y="28" width="343" height="534"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RM7-9k-PSh">
+                                <rect key="frame" x="16" y="570" width="55" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Get Info"/>
+                                <connections>
+                                    <action selector="getPieInfo:" destination="lsx-1w-0kt" eventType="touchUpInside" id="57z-VM-Vo7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WIb-hF-QF5">
+                                <rect key="frame" x="244" y="570" width="115" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Create Cal Chart"/>
+                                <connections>
+                                    <action selector="setCalPie:" destination="lsx-1w-0kt" eventType="touchUpInside" id="yoy-IJ-h2z"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ax0-ve-zVY">
+                                <rect key="frame" x="86" y="570" width="150" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Create Exercise Chart"/>
+                                <connections>
+                                    <action selector="setExPie:" destination="lsx-1w-0kt" eventType="touchUpInside" id="goE-K2-IAa"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="0.13307297230000001" green="0.1318865716" blue="0.1981847286" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Tracking" image="tracking" id="vdB-Ow-8or"/>
+                    <connections>
+                        <outlet property="pieChartView" destination="Aow-aQ-YPt" id="Uwy-7P-WXe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xoh-O2-m9D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1646" y="380"/>
+            <point key="canvasLocation" x="1645.5999999999999" y="379.16041979010498"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">

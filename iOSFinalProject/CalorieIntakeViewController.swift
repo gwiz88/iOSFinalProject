@@ -91,6 +91,13 @@ class CalorieIntakeViewController: UIViewController {
             if let destination = segue.destination as? FirstViewController {
                 destination.gotPersonal = finalCalories
             }
+            
+            if let destination = segue.destination as? TrackingViewController {
+
+                destination.gotFoodArray = foodArray
+                destination.gotCalorieArray = calorieArray
+                
+            }
         }
     }
     
